@@ -6,6 +6,7 @@ public class minDifferencePair{
 		if(t>0 && t<=30){
 		for(int i=0;i<t;i++){
 			int n=in.nextInt();
+			if(n>=1 && n<=100){
 			int arr[]=new int[n];
 			for(int j=0;j<n;j++)
 				arr[j]=in.nextInt();
@@ -23,6 +24,7 @@ public class minDifferencePair{
 					min=a[f];
 			}
 			System.out.println(min);
+			}
 		}
 		}
 	}
