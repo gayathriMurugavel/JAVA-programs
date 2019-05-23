@@ -7,6 +7,7 @@ public class maxMoney{
 			int sum=0;
 			for(int i=0;i<t;i++){
 				int n=in.nextInt(),m=in.nextInt();//n=no.of houses,m=money in each houses
+				if(n>=1 && n<=100)
 				for(int j=0;j<n;j=j+2){
 					sum+=m;
 				}
