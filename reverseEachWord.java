@@ -3,7 +3,7 @@ public class reverseEachWord{
 	public static void main(String[] args){
 		Scanner in=new Scanner(System.in);
 		int t=in.nextInt();
-		if(t>=1 && t<=10){
+		if(t>0 && t<=10){
 			for(int i=0;i<t;i++){
 				String s=in.nextLine();
 				String str[]=s.split(" ");
@@ -12,10 +12,11 @@ public class reverseEachWord{
 					original=str[j];
 					result="";
 					char ch[]=str[j].toCharArray();
-					for(int k=str[].length-1;k>=0;k--)
+					for(int k=ch.length-1;k>=0;k--)
 						result+=ch[k];
 					System.out.print(result+" ");
 				}
+				System.out.println();
 			}
 		}
 	}
