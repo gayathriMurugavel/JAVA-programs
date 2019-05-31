@@ -1,5 +1,5 @@
 import java.util.*;
-public class arrangeOneZero{
+public class LongestConsecutiveSequence{
 	public static void main(String[] args){
 		Scanner in=new Scanner(System.in);
 		int n=in.nextInt();
@@ -7,16 +7,14 @@ public class arrangeOneZero{
 		int cnt=0;
 		for(int i=0;i<n;i++){
 			arr[i]=in.nextInt();
-			if(arr[i]==0)
+		}
+		Arrays.sort(arr);
+		for(int i=0;i<n-1;i++){
+			if(arr[i]+1==arr[i+1])
 				cnt++;
-		}
-		for(int j=0;j<n;j++){
-			if(j<cnt)
-				System.out.print(0+" ");
 			else
-				System.out.print(1+" ");
+				break;
 		}
-		//System.out.println(1);
-		
+		System.out.println(cnt+1);
 	}
 }
